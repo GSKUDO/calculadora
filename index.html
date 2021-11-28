@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculadora</title>
+        <meta charset="utf-8" lang="pt-br">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+        <h1>Calculadora</h1>
+        <form id="form"> 
+            <input type="number" id="primeiro" value="" placeholder="Primeiro número" class="numero">
+            <br>
+            <input type="number" id="segundo" value="" placeholder="Segundo número" class="numero">
+            <br>
+            <div id="lado">
+                <input type="button" id="soma" value="+" onclick="somar()" class="bt">
+                <br>
+                <input type="button" id="menos" value="-" onclick="subtrair()" class="bt">
+                <br> 
+                <input type="button" id="vezes" value="*" onclick="multiplicar()" class="bt">
+                <br>
+                <input type="button" id="divisao" value="/" onclick="dividir()" class="bt">
+            </div>
+            <br>
+            <input type="text" id="resultado" value="" placeholder="Resultado" class="numero">
+            <br>
+            <input type="reset" value="Limpar" class="bt">
+        </form>
+        <script src="calculadora.js"></script>
+    </body>
+</html>
